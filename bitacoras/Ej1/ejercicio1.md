@@ -93,9 +93,7 @@ Me sirvió como base, pero igualmente revisé el código antes de usarlo para co
 ### Prompt #2
 
 **Lo que escribí:**
-```
-...
-```
+En este ejercicio solo utilizamos un prompt porque es todo repetitivo, asi que solo debiamos chequear si estaba bien. 
 **Por qué necesité este segundo prompt** (qué falló o faltó en el anterior):
 ```
 ...
@@ -147,9 +145,16 @@ Pegá el checklist de verificación del ejercicio y marcá lo que comprobaste **
 
 Cubrí: qué proceso seguiste, qué decisiones tomaste y por qué, qué aprendiste, y —lo más importante— **qué corregiste de lo que te dio la IA**. Escribí con tus palabras; esto se contrasta con el oral.
 
-```
-...
-```
+### 6. ✍️ Reflexión
+
+En este ejercicio usamos la IA para crear la nueva entidad **Materias** siguiendo el mismo modelo que ya tenían **Cursos** y **Alumnos**. Para que fuera más fácil revisar el código, decidimos generar primero el **Repository**, después el **Service** y por último el **Controller**, en lugar de pedir todo junto.
+
+Al escribir los prompts dimos bastante contexto sobre el proyecto, indicando que usa Node.js, Express, PostgreSQL y una arquitectura en capas. También aclaramos que debía mantener el mismo estilo del código existente y no agregar librerías nuevas.
+
+La IA generó un buen resultado, pero antes de usarlo revisamos que todo siguiera el patrón del proyecto. Verificamos que las consultas SQL fueran parametrizadas, que se utilizara la clase `Db` para acceder a la base de datos y que los métodos y la estructura fueran iguales a los de `Cursos`. También registramos el nuevo controller en `server.js` para que la ruta `/api/materias` funcionara correctamente.
+
+Con este ejercicio aprendimos que la IA puede ahorrar tiempo, pero que siempre hay que revisar el código antes de usarlo. También vimos que un prompt bien explicado ayuda a obtener respuestas más precisas y adaptadas al proyecto.
+
 
 ---
 
